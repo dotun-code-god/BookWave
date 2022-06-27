@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=Galdeano&family=Merriweather+Sans:ital,wght@0,600;1,600&family=Source+Serif+Pro:wght@600&family=Yusei+Magic&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gallery-gradient {
+    background-image: linear-gradient(to bottom right, #4f2412, #934626, #934626, #f2d16c, #fcea8c);
+    background-image: -moz-linear-gradient(to bottom right, #4f2412, #934626, #934626, #f2d16c, #fcea8c);
+}
+
+.gradient-border:focus {
+    border: 1px solid;
+    outline: none;
+    border-image: linear-gradient(to right, #f2d16c, #fcea8c, #4f2412, #934626, #934626, #f2d16c, #fcea8c) 1;
+    border-image: -moz-linear-gradient(to right, #f2d16c, #fcea8c, #4f2412, #934626, #934626, #f2d16c, #fcea8c) 1;
+}
+
+.home-nav-link:hover span {
+    display: block;
+}
