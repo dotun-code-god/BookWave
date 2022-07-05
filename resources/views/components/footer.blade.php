@@ -13,7 +13,7 @@
                                 <li class="text-gray-600 hover:text-amber-900 text-md mb-2"><a href="">Contact us</a></li>
                                 <li class="text-gray-600 hover:text-amber-900 text-md mb-2"><a href="">Invite Friends</a></li>
                                 <li class="text-gray-600 hover:text-amber-900 text-md mb-2"><a href="">Gifts</a></li>
-                                <li class="text-gray-600 hover:text-amber-900 text-md mb-2"><a href="">Qwerty for enterprise</a></li>
+                                <li class="text-gray-600 hover:text-amber-900 text-md mb-2"><a href="">{{env('APP_NAME')}} for enterprise</a></li>
                             </ul>
                         </div>
                         <div  class="xs:mb-6">
@@ -69,7 +69,7 @@
                 </div>
                 <div>
                     <span class="text-gray-600 pr-3">Language: <strong>English</strong></span>
-                    <span class="text-gray-600 hover:text-amber-900">Copyright © 2022 Qwerty Inc.</span>
+                    <span class="text-gray-600 hover:text-amber-900">Copyright © 2022 {{env('APP_NAME')}} Inc.</span>
                 </div>
             </div>
         </div>

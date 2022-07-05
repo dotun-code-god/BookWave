@@ -1,5 +1,5 @@
 {{-- Header Section --}}
-<x-headers title="Explore & Upload Documents for Free | Qwerty"></x-headers>
+<x-headers title="Explore & Upload Documents for Free | {{env('APP_NAME')}}"></x-headers>
 {{-- Header Section ends --}}
 
   {{-- Browse Page --}}

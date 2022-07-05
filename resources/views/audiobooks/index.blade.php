@@ -1,5 +1,5 @@
 {{-- Header Section --}}
-<x-headers title="Discover the Best Audiobooks on Qwerty"></x-headers>
+<x-headers title="Discover the Best Audiobooks on {{env('APP_NAME')}}"></x-headers>
 {{-- Header Section ends --}}
 
    {{-- Browse Page --}}

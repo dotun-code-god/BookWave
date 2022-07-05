@@ -1,3 +1,4 @@
+<link rel="icon" href="{{asset('img/logos/logo.jpg')}}">
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <link href="{{ asset('plugins/nivo-slider/nivo-slider.min.css') }}" rel="stylesheet">
 <link rel="stylesheet" href="{{asset('plugins/themify-icons.min.css')}}">

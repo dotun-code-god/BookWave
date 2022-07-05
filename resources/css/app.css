@@ -1,7 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Basic&family=Galdeano&family=Merriweather+Sans:ital,wght@0,600;1,600&family=Source+Serif+Pro:wght@600&family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=Galdeano&family=Lobster+Two:ital@1&family=Merriweather+Sans:ital,wght@0,600;1,600&family=Source+Serif+Pro:wght@600&family=Yusei+Magic&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'MussicaSwash';
+        src: url('../../public/fonts/MussicaSwash.otf') format('opentype');
+    }
+
+    @font-face {
+        font-family: 'Snow Puppet';
+        src: url('../../public/fonts/SnowPuppetsPersonalUseMedium-1G8vj.ttf') format('truetype');
+    }
+}
 
 .gallery-gradient {
     background-image: linear-gradient(to bottom right, #4f2412, #934626, #934626, #f2d16c, #fcea8c);
@@ -17,4 +29,18 @@
 
 .home-nav-link:hover span {
     display: block;
+}
+
+.brand-logo {
+    text-shadow: 0px 3px 6px #39190c;
+}
+
+.form-container {
+    box-shadow: 1px 1px 8px 0px rgba(57, 25, 12, 0.6);
+}
+
+@layer components {
+    .form-inputs {
+        /* @apply ; */
+    }
 }

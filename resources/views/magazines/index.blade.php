@@ -1,5 +1,5 @@
 {{-- Header Section --}}
-<x-headers title="Discover and Read the Best Magazine Article Online | Qwerty"></x-headers>
+<x-headers title="Discover and Read the Best Magazine Article Online | {{env('APP_NAME')}}"></x-headers>
 {{-- Header Section ends --}}
 
    {{-- Browse Page --}}

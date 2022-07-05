@@ -3,8 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Qwerty</title>
-        <link rel="icon" href="{{asset('img/logos/logo.jpg')}}">
+        <title>{{env('APP_NAME')}}</title>
         {{-- Load Styles  --}}
             <x-load-styles></x-load-styles>
         {{-- Load Styles ends --}}
@@ -14,15 +13,17 @@
         {{-- Header Section --}}
         <div class="relative">
             <div class="flex items-center ml-6 absolute top-[-0.5rem] xs:top-[-0.7rem] text-white z-[60]" id="static-nav">
-                <svg class="trigger-sideNav w-[1.3rem] cursor-pointer" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="24" viewBox="0 0 172 172" style=" fill:#undefined;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M14.33333,35.83333v14.33333h143.33333v-14.33333zM14.33333,78.83333v14.33333h143.33333v-14.33333zM14.33333,121.83333v14.33333h143.33333v-14.33333z"></path></g></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 trigger-sideNav w-[1.3rem] cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
                 <img src="{{asset('img/logos/logo-3.png')}}" class="w-[80px] mt-[-6px] xs:m-0 xs:ml-[-8px]" alt="logo">
-                <p class="font-Merriweather text-2xl xs:text-xl xs:ml-[-10px]">QWERTY</p>
+                <p class="font-Mussica_Swash font-bold text-2xl xs:text-xl xs:ml-[-10px]"><a href="{{route('home')}}"> {{env('APP_NAME')}}</a></p>
             </div>
             <div id="header" class="bg-[#583c30]/0 h-16 text-white flex justify-between z-50 top-0 fixed w-full items-center mx-auto"> 
                 <div class="flex items-center ml-6">
                     <svg class="trigger-sideNav w-[1.3rem] cursor-pointer" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="24" viewBox="0 0 172 172" style=" fill:#undefined;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M14.33333,35.83333v14.33333h143.33333v-14.33333zM14.33333,78.83333v14.33333h143.33333v-14.33333zM14.33333,121.83333v14.33333h143.33333v-14.33333z"></path></g></g></svg>
                     <img src="{{asset('img/logos/logo-3.png')}}" class="w-[80px] mt-[-6px] xs:m-0 xs:ml-[-8px]" alt="logo">
-                    <p class="font-Merriweather text-2xl xs:text-xl xs:ml-[-10px]">QWERTY</p>
+                    <p class="font-Mussica_Swash font-bold text-2xl xs:text-xl xs:ml-[-10px]"><a href="{{route('home')}}"> {{env('APP_NAME')}}</a></p>
                 </div>
                 <div>
                     <button class="bg-[#d0b052] hidden free-trial hover:border-4 border-4 border-[#d0b052] hover:bg-transparent font-semibold mr-8 py-1 px-8 box-border rounded-lg text-lg xs:text-sm">Start your free trial</button>
@@ -33,7 +34,7 @@
             <div id="sideNav" class="top-0 text-gray-500 left-[-15rem] bg-gray-100 z-[100] w-60 h-full fixed p-2 font-Galdeano overflow-y-auto">
                 <div class="flex items-center ml-[-0.3rem]">
                     <img src="{{asset('img/logos/logo-3.png')}}" class="w-[60px]" alt="logo">
-                    <p class="font-Merriweather text-xl ml-[-0.6rem] text-black">QWERTY</p>
+                    <p class="font-Mussica_Swash text-xl ml-[-0.6rem] text-black">{{env('APP_NAME')}}</p>
                     <i class="closeSideNav cursor-pointer fa fa-times relative right-[-3rem] text-gray-500 text-2xl"></i>
                 </div>
                 <div class="mt-2 flex items-center">
@@ -87,7 +88,6 @@
                 <div class="flex items-center ml-6">
                     <i class="hover:text-blue-800 cursor-pointer fab fa-twitter text-3xl mr-3"></i>
                     <i class="hover:text-blue-800 cursor-pointer fab fa-facebook text-3xl"></i>
-                    <img src="{{asset('img/logos/logo-3.png')}}" class="cursor-pointer w-[60px]" alt="logo">
                 </div>
             </div>
             <div id="sideNav-overlay" class="hidden bg-[#583c30]/60 w-full h-full fixed top-0 z-[99]"></div>
